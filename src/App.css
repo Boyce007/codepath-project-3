@@ -1,15 +1,38 @@
-.title-container {
+.card-container {
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: baseline;
-    
-    
+    border: solid;
+    margin: 20px;
+    padding: 20px;
     height: 100vh;
   }
 
 img {
-    height: 500px 
+    height: 300px 
+}
+.container {
+    display: flex;
+
+}
+.ban-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: center;
+    border: solid;
+    padding: 10px;
+}
+
+.dog-card-container {
+    display: flex;
+    flex-direction: column;
+}
+.attr-container {
+    display: flex;
+    justify-content: center;
+
 }
 
 
