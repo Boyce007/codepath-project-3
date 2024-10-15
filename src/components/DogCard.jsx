@@ -1,10 +1,10 @@
 import React from 'react'
 
-const DogCard = ({picture,name,ls,bf}) => {
+const DogCard = ({picture,breedName,ls,bf,onNameClick}) => {
   return (
     <div className='dog-card-container'>
         <div className='attr-container'>
-            <button>{name}</button>
+            <button onClick={onNameClick}>{breedName}</button>
             <button>{ls}</button>
             <button>{bf}</button>
       </div>

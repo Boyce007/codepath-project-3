@@ -26,25 +26,52 @@ function App() {
 
   }
 
-  const handleBannedAttribute = () => {
-    setBanned([...banned])
+  
+
+  const handleNameClick = () => {
+    setBanned([...banned,name])
+
+  }
+
+  const handlLifeSpanClick = () => {
+
+  }
+  const handleBredForClick = () => {
+
+  }
+  const removeFromBannedlist = () => {
+    
   }
 
 
+
+  const isBannedEmpty = banned.length == 0;
+  const bannedList = banned.map((item, index) => (
+    <button>{item}</button>
+  ));
   return (
 
     <div className='container'>
       <div className="card-container">
         <h1>Learn some more about dogs</h1>
         <h2>Discover Dogs from your wildest dreams</h2>
-        {isCliked && <DogCard picture={image} name={name} ls={lifeSpan} bf={bredFor}/> }
-        <button onClick={callAPI} >Discover</button>
-        
+        {isCliked && 
+        <DogCard
+         picture={image}
+         breedName={name}
+         ls={lifeSpan} 
+         bf={bredFor}
+         onNameClick={handleNameClick} 
 
+         />
+          }
+        <button onClick={callAPI} >Discover</button>
+  
       </div>
       <div className='ban-list-container'>
         <h2>Banned List</h2>
         <p>Select your list of banned attributes</p>
+          {!isBannedEmpty && bannedList}
       </div>
     
     </div>
