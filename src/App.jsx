@@ -14,8 +14,8 @@ function App() {
   const url = 'https://api.thedogapi.com/v1/images/search'
   const apiKey = 'live_WIrZPhSJxXptX7hl4rxPNpqRV7shUKcnZhrJoxk4IbazhNaxQjdgDwHGYmS05eJN'
   const callAPI = async () => {
-    const excluded = banned.length ? `&exclude=${excluded.join(',')}` : '';
-    const response = await fetch(`${url}?limit=1${excluded}&api_key=${apiKey}`);
+    // const excluded = banned.length ? `&exclude=${excluded.join(',')}` : '';
+    const response = await fetch(`${url}?limit=1&api_key=${apiKey}`);
     const json = await response.json();
     setImage(json[0].url);
     console.log(json[0].breeds)
@@ -28,26 +28,28 @@ function App() {
 
   
 
-  const handleNameClick = () => {
-    setBanned([...banned,name])
+  const handleClick = (attr) => {
+    setBanned([...banned,attr])
 
   }
 
   const handlLifeSpanClick = () => {
+    setBanned([...banned,lifeSpan]);
 
   }
   const handleBredForClick = () => {
+    setBanned([...banned,bredFor])
 
   }
-  const removeFromBannedlist = () => {
-    
+  const handleRemoveFromBanned = (attrToRemove) => {
+    setBanned(banned.filter(attr =>attr != attrToRemove));
   }
 
 
 
   const isBannedEmpty = banned.length == 0;
   const bannedList = banned.map((item, index) => (
-    <button>{item}</button>
+    <button onClick={()=>handleRemoveFromBanned(item)} key={index}>{item}</button>
   ));
   return (
 
@@ -61,7 +63,7 @@ function App() {
          breedName={name}
          ls={lifeSpan} 
          bf={bredFor}
-         onNameClick={handleNameClick} 
+         onNameClick={()=>handleClick()} 
 
          />
           }
