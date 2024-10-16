@@ -16,12 +16,12 @@ The following **required** functionality is completed:
 - [ X ] **At least one image is displayed per API call**
 - [ X ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
 - [ X  ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
-- [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+- [ X ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
 - [ ] Multiple types of attributes can be added to the ban list
-- [ ] Users can see a stored history of their previously viewed items from their session
+- [ X ] Users can see a stored history of their previously viewed items from their session
 
 The following **additional** features are implemented:
 
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/bmct5YR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  

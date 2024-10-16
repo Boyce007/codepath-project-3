@@ -17,7 +17,11 @@ img {
     display: flex;
     flex-direction: row;
 
+
+
 }
+
+
 .ban-list-container {
     display: flex;
     flex-direction: column;
