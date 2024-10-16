@@ -2,7 +2,7 @@
 
 Submitted by: **Daniel Boyce**
 
-This web app: **insert description**
+This web app: **Create an app that access external API**
 
 Time spent: **5** hours spent in total
 
@@ -14,8 +14,8 @@ The following **required** functionality is completed:
 - [ X ] **Only one item/API call is viewable at a time**
 - [ X ] **API calls appear random to the user**
 - [ X ] **At least one image is displayed per API call**
-- [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
-  - [ ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
+- [ X ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+- [ X  ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
 - [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Daniel Boyce
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
